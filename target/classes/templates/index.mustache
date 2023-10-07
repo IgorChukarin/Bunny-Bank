@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>BunnyBank</title>
+</head>
+<body style="background-color: #92adff">
+
+<div class="container">
+    <div class="card text-center shadow" style="margin: 50px 0px 30px 0px;">
+        <div class="card-body">
+            <h3 class="card-title">Ваш Зай-Прогресс</h3>
+            <p class="card-text">Вы накопили <b>350.000</b> из <b>700.000</b></p>
+            <div class="progress mx-auto" style="height: 40px; width: 75%;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                     aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">В копилочку</h4>
+                    <p class="card-text">Положи деньги в копилочку и увелич Зай-Прогресс!</p>
+                    <p>
+                        <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Хочу положить
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <h5>Сколько?</h5>
+                            <input placeholder="Зай-Денег...">
+                            <br>
+                            <button class="btn btn-success" type="button">
+                                Положить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title">Из копилочки</h4>
+                    <p class="card-text">В теории их можно достать. Незнаю, посмотрим.</p>
+                    <p>
+                        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#take"
+                                aria-expanded="false" aria-controls="take">
+                            Хочу достать
+                        </button>
+                    </p>
+                    <div class="collapse" id="take">
+                        <br>
+                        <h5>Вы уверены?</h5>
+                        <p>
+                            <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#take"
+                                    aria-expanded="false" aria-controls="take">
+                                Нет
+                            </button>
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                    data-target="#takeSure" aria-expanded="false" aria-controls="takeSure">
+                                Да
+                            </button>
+                        </p>
+                        <div class="collapse" id="takeSure">
+                            <br>
+                            <div class="card card-body">
+                                <h5>Ладно, сколько?</h5>
+                                <input placeholder="Зай-Денег...">
+                                <br>
+                                <button class="btn btn-danger" type="button" data-toggle="collapse"
+                                        data-target="#no" aria-expanded="false" aria-controls="no">
+                                    Достать
+                                </button>
+                            </div>
+                            <div class="collapse" id="no">
+                                <br>
+                                <h5>Столько нельзя</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+</html>
