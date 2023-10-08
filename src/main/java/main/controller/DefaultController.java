@@ -56,4 +56,16 @@ public class DefaultController {
         transactionRepository.save(transaction);
         return "index";
     }
+
+    @GetMapping("/transactions")
+    public String showTransactions(Map<String, Object> model) {
+        Iterable<Transaction> transactions = transactionRepository.findAll();
+        model.put("transactions", transactions);
+        return "transactions";
+    }
+
+    @GetMapping("/about")
+    public String showAbout() {
+        return "about";
+    }
 }

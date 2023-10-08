@@ -16,12 +16,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-white">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="/images/bunny_bank_logo.JPG" width="50" height="50"
                  class="d-inline-block align-content-center" alt="">
             Зай-Банк
         </a>
     </nav>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,24 +31,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Транзакции </a>
+                <a class="nav-link" href="/transactions">Транзакции </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">О нас </a>
+                <a class="nav-link" href="/about">О нас </a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ася</button>
         </form>
     </div>
 </nav>
 
 
 <div class="container">
-    <div class="card text-center shadow" style="margin: 50px 0px 30px 0px;">
+    <div class="card text-center shadow" style="margin: 50px 0px 0px 0px;">
         <div class="card-body">
             <h3 class="card-title">Ваш Зай-Прогресс</h3>
             <p class="card-text">Вы накопили <b>{{balance}}</b> из <b>700.000</b></p>
@@ -61,7 +62,7 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <div class="card shadow">
+            <div class="card shadow" style="margin-top: 30px">
                 <div class="card-body">
                     <h4 class="card-title">В копилочку</h4>
                     <p class="card-text">Положи деньги в копилочку и увелич Зай-Прогресс!</p>
@@ -88,7 +89,7 @@
 
 
         <div class="col-sm-6">
-            <div class="card shadow">
+            <div class="card shadow" style="margin-top: 30px">
                 <div class="card-body">
                     <h4 class="card-title">Из копилочки</h4>
                     <p class="card-text">В теории их можно достать. Незнаю, посмотрим.</p>
