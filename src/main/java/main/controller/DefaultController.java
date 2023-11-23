@@ -40,7 +40,7 @@ public class DefaultController {
         accountRepository.save(account);
         Integer balance = account.getBalance();
         Integer percentage = balance / (700_000 / 100);
-        model.put("balance", balance);
+        model.put("balance", balance / 1000);
         model.put("percentage", percentage);
         return "index";
     }
